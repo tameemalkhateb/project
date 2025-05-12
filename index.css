@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 960px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(33% - 20px); /* To make them three in a row with space */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.text-box h2 {
+  color: #343a40;
+  margin-top: 0; /* Fix: add margin-top to remove default spacing */
+}
+
+.text-box p {
+  color: #495057;
+  line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .text-box {
+    width: calc(50% - 20px); /* Two in a row */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box {
+    width: 100%; /* One in a row */
+  }
+}
